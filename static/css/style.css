@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dcdcdc;
+}
+
+header {
+    height: 5vh;
+    width: 80%;
+    padding: 2vh 10%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 5vh;
+    background-color: #FFFF;
+}
+
+header h1 {
+    width: 20%;
+    text-align: center;
+}
+
+header nav {
+    width: 30%;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 1%;
+}
