@@ -147,9 +147,28 @@ main .profile .profile_zone .profile_text p {
     background-color: aquamarine;
 }
 
+.work .row {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
 
+}
 
+.work .row .work_detail {
+    width: 30%;
+}
 
+.work .row .work_detail .work_img {
+    width: 100%;
+    
+}
+
+.work .row .work_detail .work_img img {
+    overflow: hidden;
+    object-fit: contain;
+    width: 100%;
+    margin: 0 auto;
+}
 
 
 
@@ -193,5 +212,15 @@ main .profile .profile_zone .profile_text p {
     .skill .row .skill_detail {
         width: 80%;
         text-align: center;
+    }
+
+    .work .row {
+        width: 100%;
+        display: block;
+        
+    }
+    
+    .work .row .work_detail {
+        width: 100%;
     }
 }
