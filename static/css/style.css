@@ -171,7 +171,7 @@ main .profile .profile_zone .profile_text p {
     }
 
     main .profile .icon {
-        max-width: 150px;
+        width: 100%;
     }
 
     /* main .profile {
