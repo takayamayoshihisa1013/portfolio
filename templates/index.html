@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>高山慶久　ポートフォリオサイト</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>高山慶久 ポートフォリオサイト</title>
 </head>
+
 <body>
     <header>
         <h1>Portfolio</h1>
@@ -17,5 +20,89 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="profile_back">
+            <h1>Yoshihisa Takayama</h1>
+            <h2>Portfolio Site</h2>
+        </section>
+        <section class="profile">
+            <div class="profile_zone">
+                <div class="icon">
+                    <img src="{{ url_for('static', filename='images/r1280x720l.jpg') }}" alt="">
+                </div>
+                <div class="profile_text">
+                    <h3>高山　慶久</h3>
+                    <h4>Yoshihisa Takayama</h4>
+                    <p>専門学校HAL東京IT学部高度情報学科3年</p>
+                    <p>当ポートフォリオサイトに訪問していただき、誠にありがとうございます。</p>
+                    <p>高山 慶久と申します。</p>
+                    <p>ITエンジニアとして働くために学習と努力を続けている学生です。</p>
+                </div>
+            </div>
+        </section>
+        <section class="skill">
+            <h2>skill</h2>
+
+            <div class="row">
+                <div class="skill_detail">
+                    <div class="skill_icon">
+                        <p><i class="fa-brands fa-python"></i></p>
+                    </div>
+                    <div class="back_bar">
+                        <div class="bar"></div>
+                    </div>
+                    <p class="percent">50%</p>
+                </div>
+                <div class="skill_detail">
+                    <div class="skill_icon">
+                        <p><i class="fa-brands fa-java"></i></p>
+                    </div>
+                    <div class="back_bar">
+                        <div class="bar"></div>
+                    </div>
+                    <p class="percent">50%</p>
+                </div>
+                <div class="skill_detail">
+                    <div class="skill_icon">
+                        <p><i class="fa-brands fa-html5"></i></p>
+                    </div>
+                    <div class="back_bar">
+                        <div class="bar"></div>
+                    </div>
+                    <p class="percent">50%</p>
+                </div>
+                <div class="skill_detail">
+                    <div class="skill_icon">
+                        <p><i class="fa-brands fa-css3-alt"></i></p>
+                    </div>
+                    <div class="back_bar">
+                        <div class="bar"></div>
+                    </div>
+                    <p class="percent">50%</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="skill_detail">
+                    <div class="skill_icon">
+                        <p><i class="fa-brands fa-js"></i></p>
+                    </div>
+                    <div class="back_bar">
+                        <div class="bar"></div>
+                    </div>
+                    <p class="percent">50%</p>
+                </div>
+                <div class="skill_detail">
+                    <div class="skill_icon">
+                        <p><i class="fa-solid fa-database"></i></p>
+                    </div>
+                    <div class="back_bar">
+                        <div class="bar"></div>
+                    </div>
+                    <p class="percent">50%</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

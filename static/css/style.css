@@ -5,25 +5,32 @@
 
 body {
     background-color: #dcdcdc;
+    background-image: url(./../images/r1280x720l.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
     height: 5vh;
     width: 80%;
-    padding: 2vh 10%;
+    padding: 2.5vh 10%;
     display: flex;
     justify-content: space-between;
     line-height: 5vh;
     background-color: #FFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header h1 {
     width: 20%;
     text-align: center;
+    font-size: 4vmin;
 }
 
 header nav {
-    width: 30%;
+    width: 40%;
 }
 
 header nav ul {
@@ -34,5 +41,157 @@ header nav ul {
 }
 
 header nav ul li {
-    padding: 1%;
+    font-size: 1.2vw;  /* フォントサイズを少し小さくする */
+    flex-shrink: 1;
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul li a {
+    padding: 0.5%;  /* パディングを少し減らす */
+    font-size: 2.3vmin;
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    width: 100%;
+    margin-top: 10vh;
+}
+
+main .profile_back {
+    background-color: rgba(0,0,0,0.5);
+    height: 90vh;
+    color: #FFFF;
+}
+
+main section {
+    background-color: #FFFF;
+    width: 70%;
+    padding: 5vh 15%;
+}
+
+main .profile .profile_zone {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap; 
+}
+
+main .profile .icon {
+    width: 40%;
+    /* height: 40vh; */
+}
+
+main .profile .icon img {
+    display: block;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0 auto;
+    flex: 1;
+}
+
+main .profile .profile_zone .profile_text {
+    width: 55%;
+    line-height: 5vh;
+    font-size: 1em;
+}
+
+main .profile .profile_zone .profile_text h3 {
+    /* font-size: 3.5vmin; */
+}
+
+main .profile .profile_zone .profile_text h4 {
+    /* font-size: 2vmin; */
+}
+
+
+main .profile .profile_zone .profile_text p {
+    /* font-size: 2.3vmin; */
+}
+
+.skill {
+    background-color: #f5f5f5;
+}
+
+.skill .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill .row .skill_icon p {
+    font-size: 3em;
+}
+
+.skill .row .skill_detail {
+    width: 25%;
+    text-align: center;
+    margin: 5vh auto;
+}
+
+.skill .row .back_bar {
+    width: 80%;
+    height: 0.5vh;
+    background-color: gray;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.skill .row .back_bar .bar {
+    width: 30%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 4vw;
+    }
+
+    header nav ul li {
+        font-size: 3vw;
+    }
+
+    main .profile .profile_zone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .profile .icon {
+        max-width: 150px;
+    }
+
+    /* main .profile {
+        width: 90%;
+        padding: 5vh 5%;
+    } */
+
+    main .profile .profile_zone .profile_text {
+        width: 100%;
+        line-height: 5vh;
+        font-size: 1em;
+    }
+
+    .skill .row {
+        width: 100%;
+        display: block;
+    }
+
+    .skill .row .skill_detail {
+        width: 80%;
+        text-align: center;
+    }
 }
