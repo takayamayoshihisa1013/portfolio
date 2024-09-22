@@ -156,6 +156,7 @@ main .profile .profile_zone .profile_text p {
 
 .work .row .work_detail {
     width: 30%;
+    margin: 5vh auto;
 }
 
 .work .row .work_detail .work_img {
