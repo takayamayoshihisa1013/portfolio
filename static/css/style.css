@@ -307,4 +307,18 @@ main .profile  .moreButton {
     .work .row .work_detail {
         width: 100%;
     }
+
+    main .profile  .moreButton {
+        display: block;
+        text-align: center;
+        width: 100px;
+        height: 25px;
+        background-color: black;
+        color: #FFFF;
+        padding: 1vh 1vw;
+        line-height: 25px;
+        text-decoration: none;
+        border-radius: 10px;
+        margin: 10vh auto;
+    }
 }
