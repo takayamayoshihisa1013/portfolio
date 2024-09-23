@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +11,7 @@ body {
     background-image: url(./../images/r1280x720l.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 header {
@@ -21,6 +25,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -71,11 +76,16 @@ main section {
     padding: 5vh 15%;
 }
 
+main section .title {
+    text-align: center;
+}
+
 main .profile .profile_zone {
     display: flex;
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap; 
+    margin-top: 10vh;
 }
 
 main .profile .icon {
@@ -113,6 +123,20 @@ main .profile .profile_zone .profile_text p {
     /* font-size: 2.3vmin; */
 }
 
+main .profile  .moreButton {
+    display: block;
+    text-align: center;
+    width: 8vw;
+    height: 4vh;
+    background-color: black;
+    color: #FFFF;
+    padding: 1vh 1vw;
+    line-height: 4vh;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10vh auto;
+}
+
 .skill {
     background-color: #f5f5f5;
 }
@@ -128,23 +152,62 @@ main .profile .profile_zone .profile_text p {
 }
 
 .skill .row .skill_detail {
-    width: 25%;
+    width: 18%;
+    padding: 2vh 1%;
     text-align: center;
     margin: 5vh auto;
+    border-radius: 10px;
+    border: 1px solid;
 }
 
 .skill .row .back_bar {
     width: 80%;
     height: 0.5vh;
     background-color: gray;
-    margin: 0 auto;
+    margin: 2vh auto 0;
     border-radius: 10px;
 }
 
-.skill .row .back_bar .bar {
-    width: 30%;
+.skill .row .back_bar .python {
+    width: 50%;
     height: 100%;
     background-color: aquamarine;
+}
+
+.skill .row .back_bar .java {
+    width: 10%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.skill .row .back_bar .html {
+    width: 60%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.skill .row .back_bar .css {
+    width: 50%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.skill .row .back_bar .javascript {
+    width: 40%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.skill .row .back_bar .database {
+    width: 40%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.work {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5vh 5%;
 }
 
 .work .row {
@@ -157,11 +220,14 @@ main .profile .profile_zone .profile_text p {
 .work .row .work_detail {
     width: 30%;
     margin: 5vh auto;
+    position: relative;
+    padding: 1%;
+    position: relative;
 }
 
 .work .row .work_detail .work_img {
     width: 100%;
-    
+    height: 30vh;
 }
 
 .work .row .work_detail .work_img img {
@@ -169,6 +235,23 @@ main .profile .profile_zone .profile_text p {
     object-fit: contain;
     width: 100%;
     margin: 0 auto;
+    height: 100%;
+}
+
+.work .row .work_detail a {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.work .row .work_detail a:hover {
+    opacity: 1;
 }
 
 
