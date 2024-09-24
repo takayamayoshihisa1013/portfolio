@@ -13,15 +13,30 @@
 <body>
     <header>
         <h1>Portfolio</h1>
-        <nav>
+        <nav class="menu">
             <ul>
                 <li><a href="/">トップ</a></li>
                 <li><a href="">ステータス</a></li>
                 <li><a href="">作品</a></li>
             </ul>
         </nav>
+        <div class="menu768">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="sideNav">
+            <ul>
+                <li><a href="">トップ</a></li>
+                <li><a href="">ステータス</a></li>
+                <li><a href="">作品</a></li>
+            </ul>
+        </nav>
     </header>
+    
     {% block main %}
+    {% endblock %}
+    <script src="{{ url_for('static', filename='js/base.js') }}"></script>
+    {% block javascript %}
+
     {% endblock %}
 </body>
 </html>
