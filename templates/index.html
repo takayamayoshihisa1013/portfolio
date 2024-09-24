@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<html lang="ja">
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>高山慶久 ポートフォリオサイト</title>
-</head>
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
 
-<body>
-    <header>
-        <h1>Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="">トップ</a></li>
-                <li><a href="">ステータス</a></li>
-                <li><a href="">作品</a></li>
-            </ul>
-        </nav>
-    </header>
+
+
+{% block main %}
     <main>
         <section class="profile_back">
             <h1>Yoshihisa Takayama</h1>
@@ -38,9 +25,9 @@
                     <p>当ポートフォリオサイトに訪問していただき、誠にありがとうございます。</p>
                     <p>高山 慶久と申します。</p>
                     <p>ITエンジニアとして働くために学習と努力を続けている学生です。</p>
-                    
+
                 </div>
-                
+
             </div>
             <a href="" class="moreButton">more</a>
         </section>
@@ -121,7 +108,7 @@
                     </div>
                     <p class="work_name">一目でわかる全国天気</p>
                     <p>使用：HTML、CSS、JavaScript</p>
-                    <a href=""></a>
+                    <a href="work?id=1"></a>
                 </div>
                 <div class="work_detail">
                     <div class="work_img">
@@ -167,5 +154,4 @@
             </div>
         </section>
     </main>
-</body>
-</html>
+{% endblock %}

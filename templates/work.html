@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/work.css') }}">
+{% endblock %}
+
+{% block main %}
+<main class="detail">
+    <section class="workTop">
+        <div class="workTopDetail">
+            <h1>{{ workData.name }}</h1>
+            
+            <h2>使用技術</h2>
+            <p>{{ workData.skill }}{{ workData.API }}</p>
+            <h2>制作期間</h2>
+            <p>2日</p>
+        </div>
+        <div class="detailimage">
+            <img src="{{ url_for('static', filename='images/work/' + workData.topImage) }}" alt="">
+        </div>
+
+    </section>
+    <section class="workDetail">
+        <div class="workDetail">
+            {{ workData.detail | safe }}
+        </div>
+    </section>
+</main>
+{% endblock %}

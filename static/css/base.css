@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dcdcdc;
+    background-image: url(./../images/r1280x720l.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {
+    height: 5vh;
+    width: 80%;
+    padding: 2.5vh 10%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 5vh;
+    background-color: #FFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    width: 20%;
+    text-align: center;
+    font-size: 4vmin;
+}
+
+header nav {
+    width: 40%;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header nav ul li {
+    font-size: 1.2vw;  /* フォントサイズを少し小さくする */
+    flex-shrink: 1;
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul li a {
+    padding: 0.5%;  /* パディングを少し減らす */
+    font-size: 2.3vmin;
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    width: 100%;
+    margin-top: 10vh;
+}

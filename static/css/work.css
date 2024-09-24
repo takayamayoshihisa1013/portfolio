@@ -1,0 +1,91 @@
+main {
+    background-color: #e0e0e0; /* より落ち着いた色 */
+    width: 100%;
+    min-height: 90vh;
+}
+
+.workTop {
+    width: 75%; /* 幅を少し狭めて中央寄せ */
+    margin: 0 auto;
+    padding-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.workTop .workTopDetail {
+    width: 48%;
+    height: auto;
+    margin-bottom: 2vh; /* 下に余白を追加 */
+}
+
+.workTop .detailimage {
+    width: 48%;
+    height: auto;
+    margin-bottom: 2vh; /* 下に余白を追加 */
+}
+
+.workTop .detailimage img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px; /* 角を少し丸く */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を少し軽く */
+}
+
+.workTop .workTopDetail h1 {
+    font-size: 1.8em; /* タイトルを少し小さく */
+    font-family: 'Georgia', serif; /* よりクラシックなフォントに */
+    color: #333; /* 落ち着いた色に変更 */
+}
+
+h2 {
+    margin-top: 4vh;
+    font-size: 1.4em; /* 見出しを少し小さく */
+    color: #555; /* 落ち着いた色に変更 */
+}
+
+.workDetail {
+    width: 65%; /* 幅を調整 */
+    margin: 5vh auto;
+    /* min-height: 80vh; */
+}
+
+.workDetail h1 {
+    text-align: center;
+    color: #333; /* 落ち着いた色に変更 */
+}
+
+.workDetail p {
+    font-size: 1em;
+    line-height: 1.6; /* 行間を広げて読みやすく */
+    color: #444; /* 落ち着いた色に変更 */
+}
+
+@media (max-width: 768px) {
+    .workTop {
+        display: block;
+        width: 90%;
+    }
+
+    .workTop .workTopDetail {
+        width: 100%;
+    }
+
+    .workTop .workTopDetail h1 {
+        font-size: 1.4em; /* 小さい画面ではフォントサイズを調整 */
+    }
+
+    .workTop .workTopDetail h2 {
+        font-size: 1.1em;
+    }
+
+    .workTop .detailimage {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .workDetail {
+        width: 95%;
+        margin: 5vh auto 0;
+    }
+}
