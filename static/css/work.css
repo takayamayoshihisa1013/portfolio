@@ -20,6 +20,12 @@ main {
     margin-bottom: 2vh; /* 下に余白を追加 */
 }
 
+.workTop .workTopDetail p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
 .workTop .topDetailImage {
     width: 48%;
     height: auto;
@@ -58,6 +64,7 @@ h2 {
 }
 
 .workDetail p {
+    width: 100%;
     font-size: 1em;
     line-height: 1.8; /* 行間を広げて読みやすく */
     color: #555; /* 落ち着いた色に変更 */
