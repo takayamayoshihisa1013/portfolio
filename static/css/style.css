@@ -260,4 +260,8 @@ main .profile  .moreButton {
         border-radius: 10px;
         margin: 10vh auto;
     }
+
+    .work .row .work_detail a {
+        transition: 0s;
+    }
 }
