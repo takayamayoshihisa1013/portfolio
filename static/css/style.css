@@ -261,7 +261,7 @@ main .profile  .moreButton {
         margin: 10vh auto;
     }
 
-    .work .row .work_detail a {
-        transition: 0s;
+    .work .row .work_detail a.active {
+        opacity: 1;
     }
 }
