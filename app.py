@@ -2,16 +2,7 @@ from flask import Flask, url_for, render_template, jsonify, request
 
 app = Flask("__name__")
 
-@app.route("/")
-def home():
-    
-    return render_template("index.html")
-
-@app.route("/work")
-def work():
-    
-    workNum = int(request.args.get("id"))
-    print(workNum)
+def workData():
     workData = [{
         "name":"一目でわかる全国天気",
         "skill":"HTML/CSS/JavaScript/OpenWeatherMap",
@@ -250,9 +241,34 @@ def work():
                         </ul>
                     </div>
                     """
+            },{
+            "name":"今日見た夢を投稿しあうSNSサイト「dreamDiary」",
+            "skill":"HTML/CSS/JavaScript/React/Python/Flask/MySQL",
+            "topImage":"work5.png",
+            "workTime":"？",
+            "detail":"""
+                        <p>Reactに興味があり、Reactを使ってサイトを作ってみたくなり、このSNSサイトを作り始めました。</p>
+                        
+                    """,
+            "detailText":"""
+                    <p>制作中...</p>
+                    """
             },
             ]
-    return render_template("work.html", workData = workData[workNum])
+    return workData
+
+@app.route("/")
+def home():
+    
+    return render_template("index.html", workData = workData())
+
+@app.route("/work")
+def work():
+    
+    workNum = int(request.args.get("id"))
+    print(workNum)
+    
+    return render_template("work.html", workData = workData()[workNum])
     
     
 

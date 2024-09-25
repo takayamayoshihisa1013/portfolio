@@ -1,22 +1,53 @@
-
-
-
-
-
 main .profile_back {
-    background-color: rgba(0,0,0,0.5);
+    background-color: #f0f0f0; /* 明るいグレー */
     height: 90vh;
-    color: #FFFF;
+    color: #333; /* ダークグレー */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+}
+
+main .profile_back h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #007BFF; /* ブルー */
+}
+
+main .profile_back h2 {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+    padding: 0;
+    font-weight: 300;
+    color: #555; /* グレー */
 }
 
 main section {
-    background-color: #FFFF;
+    background-color: #fff; /* 白 */
     width: 70%;
     padding: 5vh 15%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+    border-radius: 10px; /* 角を丸く */
+}
+
+
+
+main section {
+    background-color: #fff; /* 白 */
+    width: 70%;
+    padding: 5vh 15%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
 
 main section .title {
     text-align: center;
+    font-size: 1.7em;
+    color: #444; /* ダークグレー */
 }
 
 main .profile .profile_zone {
@@ -29,7 +60,6 @@ main .profile .profile_zone {
 
 main .profile .icon {
     width: 40%;
-    /* height: 40vh; */
 }
 
 main .profile .icon img {
@@ -41,43 +71,46 @@ main .profile .icon img {
     overflow: hidden;
     margin: 0 auto;
     flex: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
 
 main .profile .profile_zone .profile_text {
     width: 55%;
-    line-height: 5vh;
+    line-height: 1.6; /* 行間を調整 */
     font-size: 1em;
+    color: #333; /* ダークグレー */
 }
 
-main .profile .profile_zone .profile_text h3 {
-    /* font-size: 3.5vmin; */
-}
-
+main .profile .profile_zone .profile_text h3, 
 main .profile .profile_zone .profile_text h4 {
-    /* font-size: 2vmin; */
+    color: #444; /* ダークグレー */
 }
-
 
 main .profile .profile_zone .profile_text p {
-    /* font-size: 2.3vmin; */
+    color: #555; /* 少し明るいグレー */
 }
 
-main .profile  .moreButton {
+main .profile .moreButton {
     display: block;
     text-align: center;
     width: 8vw;
     height: 4vh;
-    background-color: black;
-    color: #FFFF;
+    background-color: #007BFF; /* ブルー */
+    color: #fff; /* 白 */
     padding: 1vh 1vw;
     line-height: 4vh;
     text-decoration: none;
     border-radius: 10px;
     margin: 10vh auto;
+    transition: background-color 0.3s;
+}
+
+main .profile .moreButton:hover {
+    background-color: #0056b3; /* ダークブルー */
 }
 
 .skill {
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; /* ライトグレー */
 }
 
 .skill .row {
@@ -88,6 +121,7 @@ main .profile  .moreButton {
 
 .skill .row .skill_icon p {
     font-size: 3em;
+    color: #666; /* グレー */
 }
 
 .skill .row .skill_detail {
@@ -96,52 +130,50 @@ main .profile  .moreButton {
     text-align: center;
     margin: 5vh auto;
     border-radius: 10px;
-    border: 1px solid;
+    border: 1px solid #ddd; /* ライトグレーのボーダー */
+    background-color: #fff; /* 白 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
 
 .skill .row .back_bar {
     width: 80%;
     height: 0.5vh;
-    background-color: gray;
+    background-color: #ddd; /* ライトグレー */
     margin: 2vh auto 0;
     border-radius: 10px;
 }
 
-.skill .row .back_bar .python {
-    width: 50%;
+.skill .row .back_bar div {
     height: 100%;
-    background-color: aquamarine;
+    background-color: #007BFF; /* ブルー */
 }
 
-.skill .row .back_bar .java {
+
+
+.python {
+    width: 50%;
+}
+
+.java {
     width: 10%;
-    height: 100%;
-    background-color: aquamarine;
 }
 
-.skill .row .back_bar .html {
+.html {
     width: 60%;
-    height: 100%;
-    background-color: aquamarine;
 }
 
-.skill .row .back_bar .css {
+.css {
     width: 50%;
-    height: 100%;
-    background-color: aquamarine;
 }
 
-.skill .row .back_bar .javascript {
+.javascript {
     width: 40%;
-    height: 100%;
-    background-color: aquamarine;
 }
 
-.skill .row .back_bar .database {
+.database {
     width: 40%;
-    height: 100%;
-    background-color: aquamarine;
 }
+
 
 .work {
     width: 90%;
@@ -153,15 +185,16 @@ main .profile  .moreButton {
     width: 100%;
     justify-content: space-between;
     display: flex;
-
 }
 
 .work .row .work_detail {
-    width: 30%;
+    width: 28%;
     margin: 5vh auto;
     position: relative;
     padding: 1%;
-    position: relative;
+    background-color: #fff; /* 白 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
 
 .work .row .work_detail .work_img {
@@ -175,6 +208,13 @@ main .profile  .moreButton {
     width: 100%;
     margin: 0 auto;
     height: 100%;
+    border-radius: 10px; /* 角を丸く */
+}
+
+.work .row .work_detail p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .work .row .work_detail a {
@@ -187,16 +227,12 @@ main .profile  .moreButton {
     background-color: rgba(0,0,0,0.5);
     transition: 0.4s;
     opacity: 0;
+    border-radius: 10px; /* 角を丸く */
 }
 
 .work .row .work_detail a:hover {
     opacity: 1;
 }
-
-
-
-
-
 
 @media (max-width: 768px) {
     header h1 {
@@ -216,14 +252,9 @@ main .profile  .moreButton {
         width: 100%;
     }
 
-    /* main .profile {
-        width: 90%;
-        padding: 5vh 5%;
-    } */
-
     main .profile .profile_zone .profile_text {
         width: 100%;
-        line-height: 5vh;
+        line-height: 1.6;
         font-size: 1em;
     }
 
@@ -240,20 +271,20 @@ main .profile  .moreButton {
     .work .row {
         width: 100%;
         display: block;
-        
     }
     
     .work .row .work_detail {
-        width: 100%;
+        width: 96%;
+        padding: 2%;
     }
 
-    main .profile  .moreButton {
+    main .profile .moreButton {
         display: block;
         text-align: center;
         width: 100px;
         height: 25px;
-        background-color: black;
-        color: #FFFF;
+        background-color: #007BFF;
+        color: #fff;
         padding: 1vh 1vw;
         line-height: 25px;
         text-decoration: none;
