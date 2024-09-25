@@ -4,6 +4,7 @@ app = Flask("__name__")
 
 def workData():
     workData = [{
+        "url":"work?id=0",
         "name":"一目でわかる全国天気",
         "skill":"HTML/CSS/JavaScript/OpenWeatherMap",
         "topImage":"work1.png",
@@ -16,6 +17,7 @@ def workData():
         "images":[],
         "detailText":""
             }, {
+        "url":"work?id=1",
         "name":"洋服のECサイト「SHEEP」",
         "skill":"HTML/CSS/JavaScript/JQuery/Python/Flask/MySQL/GmailAPI",
         "topImage":"work2.png",
@@ -105,6 +107,7 @@ def workData():
                 
                 """
             },{
+            "url":"work?id=2",
             "name":"ローマ字を打たなくても検索できる50音キーボード",
             "skill":"Python/Tkinter/SQLite/pyaudio/SpeechRecognition",
             "topImage":"work3.png",
@@ -168,6 +171,7 @@ def workData():
                     
                     """
             },{
+            "url":"work?id=3",
             "name":"クッションのECサイト「softNest」",
             "skill":"Python/Django/MySQL",
             "topImage":"work4.png",
@@ -242,6 +246,7 @@ def workData():
                     </div>
                     """
             },{
+            "url":"work?id=4",
             "name":"今日見た夢を投稿しあうSNSサイト「dreamDiary」",
             "skill":"HTML/CSS/JavaScript/React/Python/Flask/MySQL",
             "topImage":"work5.png",
@@ -251,7 +256,7 @@ def workData():
                         
                     """,
             "detailText":"""
-                    <p>制作中...</p>
+                    <p class="comment">制作中...</p>
                     """
             },
             ]
