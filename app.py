@@ -130,72 +130,48 @@ def work():
             "detailText":"""
                     <h2>キーボード画面</h2>
                     <div class="detailImage">
-                        <img src="static/images/work/top/work2.png" alt="">
+                        <img src="static/images/work/top/work3.png" alt="">
+                    </div>
+                    <div class="detailImage">
+                        <img src="static/images/work/subImage/work20.png" alt="">
+                    </div>
+                    <div class="detailImage">
+                        <img src="static/images/work/subImage/work21.png" alt="">
+                    </div>
+                    <div class="detailImage">
+                        <img src="static/images/work/subImage/work22.png" alt="">
                     </div>
                     <div class="comment">
                         <ul>
-                            <li>・サイトの各ページに飛べます。</li>
-                            <li>・スライドショーは人気TOP30になっています。</li>
-                            <li>・サイトの管理者は羊のロゴを押すとサイトデータが見れるページに飛べるようになっています。</li>
+                            <li>・検索エンジンを選ぶことができます。</li>
+                            <li>・検索の横のボタンを押すと音声読み取りになります。</li>
+                            <li>・平仮名、カタカナ、英語、記号のキーボードがあります。</li>
+                            <li>・下のボタンでキーボードを変えたり、配置を変える画面を出したりすることができます。</li>
                         </ul>
                     </div>
-                    <h2>商品一覧ページ</h2>
+                    <h2>音声読み取り画面</h2>
                     <div class="detailImage">
-                        <img src="static/images/work/subImage/work10.png" alt="">
+                        <img src="static/images/work/subImage/work23.png" alt="">
+                    </div>
+                    <div class="detailImage">
+                        <img src="static/images/work/subImage/work24.png" alt="">
                     </div>
                     <div class="comment">
                         <ul>
-                            <li>・商品を検索できます。</li>
-                            <li>・左サイドで性別、服の種類で絞ることができます。</li>
-                            <li>・右上の絞り込みからソートができます。</li>
+                            <li>・Pyaudioでマイクから音声を読み取り、音声ファイルを一時保存してSpeechRecognitionで音声ファイルを解析して文字起こしをしています。</li>
                         </ul>
                     </div>
-                    <h2>商品一覧ページ</h2>
+                    <h2>ボタン配置入れ替え画面</h2>
                     <div class="detailImage">
-                        <img src="static/images/work/subImage/work11.png" alt="">
+                        <img src="static/images/work/subImage/work25.png" alt="">
                     </div>
                     <div class="detailImage">
-                        <img src="static/images/work/subImage/work12.png" alt="">
+                        <img src="static/images/work/subImage/work26.png" alt="">
                     </div>
                     <div class="comment">
                         <ul>
-                            <li>・商品の色、サイズを選んだ後カートに入れる、購入ができます。。</li>
-                            <li>・ハートマークを押すことでお気に入りリストに入れることができます。</li>
-                            <li>・レビューを送信することができます。</li>
-                        </ul>
-                    </div>
-                    <h2>カートページ</h2>
-                    <div class="detailImage">
-                        <img src="static/images/work/subImage/work13.png" alt="">
-                    </div>
-                    <div class="comment">
-                        <ul>
-                            <li>・カートに入れた商品を購入することができます。</li>
-                            <li>・個数の変更、購入する商品をwラブことができます。</li>
-                            <li>・登録されている住所はアカウント作成時に入力をした住所、お届け先指定の場合は入力することができます。</li>
-                        </ul>
-                    </div>
-                    <h2>SHEEP管理ページ</h2>
-                    <div class="detailImage">
-                        <img src="static/images/work/subImage/work14.png" alt="">
-                    </div>
-                    <div class="detailImage">
-                        <img src="static/images/work/subImage/work15.png" alt="">
-                    </div>
-                    <div class="comment">
-                        <ul>
-                            <li>・サイトの訪問者数や全体の売上データ、コンバージョン率を見ることができます。</li>
-                            <li>・他にもユーザーの管理や商品管理、送られてきたお問い合わせもみることはできますが、デザインが間に合いませんでした。</li>
-                            <li>・お知らせ更新はhtmlファイルを送信してお知らせのページを追加したり、追加したページの表示非表示もできるようにしました。</li>
-                        </ul>
-                    </div>
-                    <h2>ユーザーの売上管理ページ</h2>
-                    <div class="detailImage">
-                        <img src="static/images/work/subImage/work16.png" alt="">
-                    </div>
-                    <div class="comment">
-                        <ul>
-                            <li>・自分で出品した商品の売り上げを見たり、商品の在庫を増やしたりできます。</li>
+                            <li>・1回目に押したボタンと2回目に押したボタンの配置を入れ替えることができます。</li>
+                            <li>・2枚目の画像は「×」と空白の場所を入れ替えた後の画像です。</li>
                         </ul>
                     </div>
                     

@@ -24,56 +24,10 @@
             {{ workData.detail | safe }}
         </div>
     </section>
-    
     <section class="detailText">
         <h1>アプリ構成</h1>
-        <!-- {{ workData.detailText |safe }} -->
-        <h2>キーボード画面</h2>
-        <div class="detailImage">
-            <img src="static/images/work/top/work3.png" alt="">
-        </div>
-        <div class="detailImage">
-            <img src="static/images/work/subImage/work20.png" alt="">
-        </div>
-        <div class="detailImage">
-            <img src="static/images/work/subImage/work21.png" alt="">
-        </div>
-        <div class="detailImage">
-            <img src="static/images/work/subImage/work22.png" alt="">
-        </div>
-        <div class="comment">
-            <ul>
-                <li>・検索エンジンを選ぶことができます。</li>
-                <li>・検索の横のボタンを押すと音声読み取りになります。</li>
-                <li>・平仮名、カタカナ、英語、記号のキーボードがあります。</li>
-                <li>・下のボタンでキーボードを変えたり、配置を変える画面を出したりすることができます。</li>
-            </ul>
-        </div>
-        <h2>音声読み取り画面</h2>
-        <div class="detailImage">
-            <img src="static/images/work/subImage/work23.png" alt="">
-        </div>
-        <div class="detailImage">
-            <img src="static/images/work/subImage/work24.png" alt="">
-        </div>
-        <div class="comment">
-            <ul>
-                <li>・Pyaudioでマイクから音声を読み取り、音声ファイルを一時保存してSpeechRecognitionで音声ファイルを解析して文字起こしをしています。</li>
-            </ul>
-        </div>
-        <h2>ボタン配置入れ替え画面</h2>
-        <div class="detailImage">
-            <img src="static/images/work/subImage/work25.png" alt="">
-        </div>
-        <div class="detailImage">
-            <img src="static/images/work/subImage/work26.png" alt="">
-        </div>
-        <div class="comment">
-            <ul>
-                <li>・1回目に押したボタンと2回目に押したボタンの配置を入れ替えることができます。</li>
-                <li>・2枚目の画像は「×」と空白の場所を入れ替えた後の画像です。</li>
-            </ul>
-        </div>
+        {{ workData.detailText |safe }}
+        
     </section>
     <section class="return">
         <button><a href="/">前のページに戻る</a></button>
