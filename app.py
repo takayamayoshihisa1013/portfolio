@@ -176,9 +176,82 @@ def work():
                     </div>
                     
                     """
+            },{
+            "name":"クッションのECサイト「softNest」",
+            "skill":"Python/Django/MySQL",
+            "topImage":"work4.png",
+            "workTime":"2週間",
+            "detail":"""
+                        <p>Djangoを学んだのでアウトプットをしてみようと思って作ったサイトです。</p>
+                        <p>Djangoのフォルダやファイル、コードなどは調べながら書いたりすることができたのですが、データベースの操作のコードがSQL文ではなく独特なものでとても難しかったです。
+                        <p>サイトは今回見やすさを重視しようと思ったのでシンプルなデザインで作ってみました。</p>
+                    """,
+            "images":[
+                "work10","work11","work12","work14","work15","work16"
+            ],
+            "detailText":"""
+                    <h2>トップページ</h2>
+                    <div class="detailImage">
+                        <img src="static/images/work/top/work4.png" alt="">
+                    </div>
+                    <div class="detailImage">
+                        <img src="static/images/work/subImage/work30.png" alt="">
+                    </div>
+                    <div class="detailImage">
+                        <img src="static/images/work/subImage/work33.png" alt="">
+                    </div>
+                    <div class="detailImage">
+                        <img src="static/images/work/subImage/work34.png" alt="">
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>・各ページに飛ぶことができます。</li>
+                        </ul>
+                    </div>
+                    <h2>商品一覧ページ</h2>
+                    <div class="detailImage">
+                        <img src="static/images/work/subImage/work31.png" alt="">
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>・人気順や登録日付順、値段順にソートをすることができます。</li>
+                            <li>・ヘッダーの虫眼鏡を押すと検索バーが上から出てくるようにしました。</li>
+                        </ul>
+                    </div>
+                    <h2>商品ページ</h2>
+                    <div class="detailImage">
+                        <img src="static/images/work/subImage/work32.png" alt="">
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>・ハートマークを押すとお気に入りリストに追加することができます。</li>
+                            <li>・色とサイズを選んでカートに入れたり、購入することができます。選ばずにカートに入れたり購入しようとすると「選択してください」とアラートが出るようになっています。</li>
+                            <li>・在庫切れの状態だとボタンを押せないようにしました。</li>
+                        </ul>
+                    </div>
+                    <h2>カートページ</h2>
+                    <div class="detailImage">
+                        <img src="static/images/work/subImage/work35.png" alt="">
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>・ハートマークを押すとお気に入りリストに追加することができます。</li>
+                            <li>・色とサイズを選んでカートに入れたり、購入することができます。選ばずにカートに入れたり購入しようとすると「選択してください」とアラートが出るようになっています。</li>
+                            <li>・在庫切れの状態だとボタンを押せないようにしました。</li>
+                        </ul>
+                    </div>
+                    <h2>購入履歴ページ</h2>
+                    <div class="detailImage">
+                        <img src="static/images/work/subImage/work36.png" alt="">
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>・購入した商品を日付ごとに見ることができます。</li>
+                        </ul>
+                    </div>
+                    """
             },
-            
-                ]
+            ]
     return render_template("work.html", workData = workData[workNum])
     
     

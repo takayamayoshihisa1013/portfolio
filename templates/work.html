@@ -9,23 +9,25 @@
     <section class="workTop">
         <div class="workTopDetail">
             <h1>{{ workData.name }}</h1>
-
             <h2>使用技術</h2>
             <p>{{ workData.skill }}</p>
             <h2>制作期間</h2>
             <p>{{ workData.workTime }}</p>
         </div>
+
+        
         <div class="topDetailImage">
             <img src="{{ url_for('static', filename='images/work/top/' + workData.topImage) }}" alt="">
         </div>
     </section>
-    <section class="workDetail">
+    <section class="workDetailSection">
+        <h2>概要</h2>
         <div class="workDetail">
             {{ workData.detail | safe }}
         </div>
     </section>
     <section class="detailText">
-        <h1>アプリ構成</h1>
+        <h1>サイト構成</h1>
         {{ workData.detailText |safe }}
         
     </section>
