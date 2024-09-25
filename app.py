@@ -115,7 +115,7 @@ def work():
                 """
             },{
             "name":"ローマ字を打たなくても検索できる50音キーボード",
-            "skill":"Python/Tkinter/SQLite/pyaudio",
+            "skill":"Python/Tkinter/SQLite/pyaudio/SpeechRecognition",
             "topImage":"work3.png",
             "workTime":"1カ月",
             "detail":"""
@@ -128,7 +128,7 @@ def work():
                 "work10","work11","work12","work14","work15","work16"
             ],
             "detailText":"""
-                    <h2>Topページ</h2>
+                    <h2>キーボード画面</h2>
                     <div class="detailImage">
                         <img src="static/images/work/top/work2.png" alt="">
                     </div>
@@ -141,7 +141,7 @@ def work():
                     </div>
                     <h2>商品一覧ページ</h2>
                     <div class="detailImage">
-                        <img src="static/images/work/subImage/work10.png') }}" alt="">
+                        <img src="static/images/work/subImage/work10.png" alt="">
                     </div>
                     <div class="comment">
                         <ul>
