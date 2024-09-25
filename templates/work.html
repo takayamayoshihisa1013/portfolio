@@ -13,7 +13,7 @@
             <h2>使用技術</h2>
             <p>{{ workData.skill }}</p>
             <h2>制作期間</h2>
-            <p>2日</p>
+            <p>{{ workData.workTime }}</p>
         </div>
         <div class="topDetailImage">
             <img src="{{ url_for('static', filename='images/work/top/' + workData.topImage) }}" alt="">
@@ -24,99 +24,11 @@
             {{ workData.detail | safe }}
         </div>
     </section>
-    <!-- <section class="detailImages">
-        {% for image in workData.images %}
-        {% if loop.index0 is divisibleby 3 %}
-            </div>
-        {% endif %}
-
-        {% if loop.index == 1 or loop.index0 is divisibleby 3 %}
-            <div class="row">
-        {% endif %}
-
-        <div class="detailImage">
-            <img src="{{ url_for('static', filename='images/work/subImage/' + image + '.png') }}" alt="">
-        </div>
-
-        {% endfor %}
-
-        
-        {% if workData.images|length is not divisibleby 3 %}
-            </div>
-        {% endif %}
-    </section> -->
+    
     <section class="detailText">
         <h1>サイト構成</h1>
-        <h2>Topページ</h2>
-        <div class="detailImage">
-            <img src="{{ url_for('static', filename='images/work/top/work2.png') }}" alt="">
-        </div>
-        <div class="comment">
-            <ul>
-                <li>・サイトの各ページに飛べます。</li>
-                <li>・スライドショーは人気TOP30になっています。</li>
-                <li>・サイトの管理者は羊のロゴを押すとサイトデータが見れるページに飛べるようになっています。</li>
-            </ul>
-        </div>
-        <h2>商品一覧ページ</h2>
-        <div class="detailImage">
-            <img src="{{ url_for('static', filename='images/work/subImage/work10.png') }}" alt="">
-        </div>
-        <div class="comment">
-            <ul>
-                <li>・商品を検索できます。</li>
-                <li>・左サイドで性別、服の種類で絞ることができます。</li>
-                <li>・右上の絞り込みからソートができます。</li>
-            </ul>
-        </div>
-        <h2>商品一覧ページ</h2>
-        <div class="detailImage">
-            <img src="{{ url_for('static', filename='images/work/subImage/work11.png') }}" alt="">
-        </div>
-        <div class="detailImage">
-            <img src="{{ url_for('static', filename='images/work/subImage/work12.png') }}" alt="">
-        </div>
-        <div class="comment">
-            <ul>
-                <li>・商品の色、サイズを選んだ後カートに入れる、購入ができます。。</li>
-                <li>・ハートマークを押すことでお気に入りリストに入れることができます。</li>
-                <li>・レビューを送信することができます。</li>
-            </ul>
-        </div>
-        <h2>カートページ</h2>
-        <div class="detailImage">
-            <img src="{{ url_for('static', filename='images/work/subImage/work13.png') }}" alt="">
-        </div>
-        <div class="comment">
-            <ul>
-                <li>・カートに入れた商品を購入することができます。</li>
-                <li>・個数の変更、購入する商品をwラブことができます。</li>
-                <li>・登録されている住所はアカウント作成時に入力をした住所、お届け先指定の場合は入力することができます。</li>
-            </ul>
-        </div>
-        <h2>SHEEP管理ページ</h2>
-        <div class="detailImage">
-            <img src="{{ url_for('static', filename='images/work/subImage/work14.png') }}" alt="">
-        </div>
-        <div class="detailImage">
-            <img src="{{ url_for('static', filename='images/work/subImage/work15.png') }}" alt="">
-        </div>
-        <div class="comment">
-            <ul>
-                <li>・サイトの訪問者数や全体の売上データ、コンバージョン率を見ることができます。</li>
-                <li>・他にもユーザーの管理や商品管理、送られてきたお問い合わせもみることはできますが、デザインが間に合いませんでした。</li>
-                <li>・お知らせ更新はhtmlファイルを送信してお知らせのページを追加したり、追加したページの表示非表示もできるようにしました。</li>
-            </ul>
-        </div>
-        <h2>ユーザーの売上管理ページ</h2>
-        <div class="detailImage">
-            <img src="{{ url_for('static', filename='images/work/subImage/work16.png') }}" alt="">
-        </div>
-        <div class="comment">
-            <ul>
-                <li>・自分で出品した商品の売り上げを見たり、商品の在庫を増やしたりできます。</li>
-            </ul>
-        </div>
+        <!-- {{ workData.detailText |safe }} -->
+        
     </section>
     <section class="return">
         <button><a href="/">前のページに戻る</a></button>
