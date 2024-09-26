@@ -8,11 +8,11 @@
 
 {% block main %}
 <main>
-    <section class="profile_back">
+    <section class="profile_back" id="top">
         <h1>Yoshihisa Takayama</h1>
         <h2>Portfolio Site</h2>
     </section>
-    <section class="profile">
+    <section class="profile" id="profile">
         <h2 class="title">Profile</h2>
         <div class="profile_zone">
             <div class="icon">
@@ -28,15 +28,12 @@
                 <p>主にPythonやJavaScriptを用いたWeb開発に取り組んでおり、ReactやFlaskのプロジェクト経験があります。</p>
                 <p>現在はクラウド技術やデータベース設計にも興味があり、将来的にはフルスタックエンジニアとして活躍したいと考えています。</p>
                 <p>趣味は観葉植物を育てることとサイクリングです。</p>
-
             </div>
-
         </div>
-        <a href="" class="moreButton">more</a>
+        <!-- <a href="" class="moreButton">more</a> -->
     </section>
-    <section class="skill">
+    <section class="skill" id="skill">
         <h2 class="title">Skill</h2>
-
         <div class="row">
             <div class="skill_detail">
                 <div class="skill_icon">
@@ -102,7 +99,7 @@
             </div>
         </div>
     </section>
-    <section class="work">
+    <section class="work" id="work">
         <h2 class="title">Work</h2>
         {% for data in workData %}
             {% if loop.index0 is divisibleby 3 or loop.first %}
@@ -125,4 +122,7 @@
         {% endfor %}
     </section>
 </main>
+{% endblock %}
+{% block javascript %}
+<script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
 {% endblock %}

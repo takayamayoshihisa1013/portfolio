@@ -15,9 +15,9 @@ body {
 }
 
 header {
-    height: 5vh;
+    height: 5dvh;
     width: 80%;
-    padding: 2.5vh 10%;
+    padding: 2.5dvh 10%;
     display: flex;
     justify-content: space-between;
     line-height: 5vh;
@@ -54,19 +54,20 @@ header .menu ul {
 }
 
 header .menu ul li {
-    font-size: 1.2vw;  /* フォントサイズを少し小さくする */
+    font-size: 1.0vw;  /* フォントサイズを少し小さくする */
     flex-shrink: 1;
-    width: 100%;
     text-align: center;
+    padding: 0.5%;
+    cursor: pointer;
 }
 
 header .menu ul li a {
-    padding: 0.5%;  /* パディングを少し減らす */
-    font-size: 2.3vmin;
+    font-size: 1.0vw;
     text-decoration: none;
     color: inherit;
+    display: block;
+    width: 100%;
 }
-
 
 header .sideNav {
     position: fixed;
@@ -74,7 +75,7 @@ header .sideNav {
     right: -80%;
     z-index: 1;
     background-color: #fff;
-    width: 80%;
+    width: 50%;
     height: 100%;
     transition: 0.4s;
 }
@@ -102,7 +103,7 @@ header .sideNav ul li a {
 
 main {
     width: 100%;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
 }
 
 @media (max-width: 768px) {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     {% block css %}
 
     {% endblock %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <title>高山慶久 ポートフォリオサイト</title>
 </head>
 <body>
@@ -17,9 +21,17 @@
         <h1>Portfolio</h1>
         <nav class="menu">
             <ul>
-                <li><a href="/">トップ</a></li>
-                <li><a href="">ステータス</a></li>
-                <li><a href="">作品</a></li>
+                {% if page == 'work' %}
+                <li><a href="/#top">トップ</a></li>
+                <li><a href="/#profile">プロフィール</a></li>
+                <li><a href="/#skill">スキル</a></li>
+                <li><a href="/#work">作品</a></li>
+                {% elif page == 'home' %}
+                <li onclick="scrollToSection('top')">トップ</li>
+                <li onclick="scrollToSection('profile')">プロフィール</li>
+                <li onclick="scrollToSection('skill')">スキル</li>
+                <li onclick="scrollToSection('work')">作品</li>
+                {% endif %}
             </ul>
         </nav>
         <div class="menu768">
@@ -27,13 +39,21 @@
         </div>
         <nav class="sideNav">
             <ul>
-                <li><a href="/">トップ</a></li>
-                <li><a href="">ステータス</a></li>
-                <li><a href="">作品</a></li>
+                {% if page == 'work' %}
+                <li><a href="/#profile">トップ</a></li>
+                <li><a href="/#profile">ステータス</a></li>
+                <li><a href="/#skill">スキル</a></li>
+                <li><a href="/#work">作品</a></li>
+                {% elif page == 'home' %}
+                <li onclick="scrollToSection('top')">トップ</li>
+                <li onclick="scrollToSection('profile')">プロフィール</li>
+                <li onclick="scrollToSection('skill')">スキル</li>
+                <li onclick="scrollToSection('work')">作品</li>
+                {% endif %}
             </ul>
         </nav>
     </header>
-    
+
     {% block main %}
     {% endblock %}
     <script src="{{ url_for('static', filename='js/base.js') }}"></script>
@@ -41,4 +61,5 @@
 
     {% endblock %}
 </body>
+
 </html>

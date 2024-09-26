@@ -3,6 +3,7 @@ from flask import Flask, url_for, render_template, jsonify, request
 app = Flask("__name__")
 
 def workData():
+    
     workData = [{
         "url":"work?id=0",
         "name":"一目でわかる全国天気",
@@ -264,18 +265,15 @@ def workData():
 
 @app.route("/")
 def home():
-    
-    return render_template("index.html", workData = workData())
+    page = "home"
+    return render_template("index.html", workData = workData(), page = page)
 
 @app.route("/work")
 def work():
-    
+    page = "work"
     workNum = int(request.args.get("id"))
     print(workNum)
-    
-    return render_template("work.html", workData = workData()[workNum])
-    
-    
+    return render_template("work.html", workData = workData()[workNum], page = page)
 
 if __name__ == "__main__":
     app.run(debug=True)

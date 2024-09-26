@@ -14,8 +14,6 @@
             <h2>制作期間</h2>
             <p>{{ workData.workTime }}</p>
         </div>
-
-        
         <div class="topDetailImage">
             <img src="{{ url_for('static', filename='images/work/top/' + workData.topImage) }}" alt="">
         </div>
@@ -29,7 +27,6 @@
     <section class="detailText">
         <h1>サイト構成</h1>
         {{ workData.detailText |safe }}
-        
     </section>
     <section class="return">
         <button><a href="/">前のページに戻る</a></button>

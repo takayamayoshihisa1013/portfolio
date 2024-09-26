@@ -1,14 +1,23 @@
+main section {
+    background-color: #fff; /* 白 */
+    width: 70%;
+    padding: 10dvh 15%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+}
+
 main .profile_back {
     background-color: #f0f0f0; /* 明るいグレー */
-    height: 90vh;
+    height: 80vh;
+    width: 50%;
     color: #333; /* ダークグレー */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    /* padding: 20px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+    /* margin: ; */
 }
 
 main .profile_back h1 {
@@ -27,21 +36,11 @@ main .profile_back h2 {
     color: #555; /* グレー */
 }
 
-main section {
-    background-color: #fff; /* 白 */
-    width: 70%;
-    padding: 5vh 15%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 
 
-main section {
-    background-color: #fff; /* 白 */
-    width: 70%;
-    padding: 5vh 15%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
-}
+
+
 
 main section .title {
     text-align: center;
@@ -188,7 +187,7 @@ main .profile .moreButton:hover {
 .work {
     width: 90%;
     margin: 0 auto;
-    padding: 5vh 5%;
+    padding: 10vh 5%;
 }
 
 .work .row {
