@@ -48,7 +48,7 @@ def workData():
                 </div>
                 <h2>商品一覧ページ</h2>
                 <div class="detailImage">
-                    <img src="static/images/work/subImage/work10.png') }}" alt="">
+                    <img src="static/images/work/subImage/work10.png" alt="">
                 </div>
                 <div class="comment">
                     <ul>
