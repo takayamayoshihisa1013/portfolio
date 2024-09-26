@@ -31,8 +31,7 @@ main section {
     background-color: #fff; /* 白 */
     width: 70%;
     padding: 5vh 15%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
-    border-radius: 10px; /* 角を丸く */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -76,14 +75,25 @@ main .profile .icon img {
 
 main .profile .profile_zone .profile_text {
     width: 55%;
-    line-height: 1.6; /* 行間を調整 */
+    line-height: 1.6;
     font-size: 1em;
-    color: #333; /* ダークグレー */
 }
 
-main .profile .profile_zone .profile_text h3, 
 main .profile .profile_zone .profile_text h4 {
-    color: #444; /* ダークグレー */
+    font-size: 0.9em;
+    color: #007BFF;
+}
+
+main .profile .profile_zone .profile_text h3 {
+    color: #444;
+} 
+
+main .profile .profile_zone .profile_text h4 {
+    color: #696969; 
+}
+
+main .profile .profile_zone .profile_text .school {
+    margin-top: 2vh;
 }
 
 main .profile .profile_zone .profile_text p {
@@ -192,7 +202,7 @@ main .profile .moreButton:hover {
     margin: 5vh auto;
     position: relative;
     padding: 1%;
-    background-color: #fff; /* 白 */
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
