@@ -17,7 +17,18 @@ def workData():
                     <p>1分ごとに自動更新される仕組みにしてリアルタイムで全国に天気を表示します。</p>
                 """,
         "images":[],
-        "detailText":""
+        "detailText":"""
+        <h2>トップページ</h2>
+        <div class="detailImage">
+            <img src="static/images/work/top/work1.png" alt="">
+        </div>
+        <div class="comment">
+            <ul>
+                <li>・全国の現在の天気を見ることができます。</li>
+                <li>・一分ごとにページの更新が行われ、最新の天気に変わります。</li>
+            </ul>
+        </div>
+        """
             }, {
         "type":"サイト",
         "url":"work?id=1",
