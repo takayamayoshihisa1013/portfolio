@@ -5,6 +5,7 @@ app = Flask("__name__")
 def workData():
     
     workData = [{
+        "type":"サイト",
         "url":"work?id=0",
         "name":"一目でわかる全国天気",
         "skill":"HTML/CSS/JavaScript/OpenWeatherMap",
@@ -18,6 +19,7 @@ def workData():
         "images":[],
         "detailText":""
             }, {
+        "type":"サイト",
         "url":"work?id=1",
         "name":"洋服のECサイト「SHEEP」",
         "skill":"HTML/CSS/JavaScript/JQuery/Python/Flask/MySQL/GmailAPI",
@@ -108,6 +110,7 @@ def workData():
                 
                 """
             },{
+            "type":"アプリ",
             "url":"work?id=2",
             "name":"ローマ字を打たなくても検索できる50音キーボード",
             "skill":"Python/Tkinter/SQLite/pyaudio/SpeechRecognition",
@@ -172,6 +175,7 @@ def workData():
                     
                     """
             },{
+            "type":"サイト",
             "url":"work?id=3",
             "name":"クッションのECサイト「softNest」",
             "skill":"Python/Django/MySQL",
@@ -247,6 +251,7 @@ def workData():
                     </div>
                     """
             },{
+            "type":"サイト",
             "url":"work?id=4",
             "name":"今日見た夢を投稿しあうSNSサイト「dreamDiary」",
             "skill":"HTML/CSS/JavaScript/React/Python/Flask/MySQL",

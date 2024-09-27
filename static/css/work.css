@@ -9,13 +9,13 @@ main {
 .workTop {
     width: 75%; /* 幅を少し狭めて中央寄せ */
     margin: 0 auto;
-    padding-top: 10vh;
+    padding-top: 15vh;
     display: flex;
     flex-wrap: wrap;
 }
 
 .workTop .workTopDetail {
-    width: 48%;
+    width:50%;
     height: auto;
     margin-bottom: 2vh; /* 下に余白を追加 */
 }
@@ -30,7 +30,7 @@ main {
 }
 
 .workTop .topDetailImage {
-    width: 48%;
+    width:50%;
     height: auto;
     margin-bottom: 2vh; /* 下に余白を追加 */
 }
@@ -44,6 +44,7 @@ main {
 }
 
 .workTop .workTopDetail h1 {
+    max-width: 93%;
     font-size: 1.8em; /* タイトルを少し小さく */
     font-family: 'Times New Roman', serif; /* よりクラシックなフォントに */
     color: #444; /* 落ち着いた色に変更 */
@@ -174,6 +175,7 @@ h2 {
 
     .workTop .workTopDetail h1 {
         font-size: 1.4em; /* 小さい画面ではフォントサイズを調整 */
+        max-width: 100%;
     }
 
     .workTop .workTopDetail h2 {
@@ -181,7 +183,7 @@ h2 {
     }
 
     .workTop .workTopDetail p  {
-        width: 96%;
+        max-width: 96%;
     }
 
     .workTop .topDetailImage {

@@ -25,8 +25,18 @@
         </div>
     </section>
     <section class="detailText">
-        <h1>サイト構成</h1>
-        {{ workData.detailText |safe }}
+        <h1>{{ workData.type }}構成</h1>
+        <!-- {{ workData.detailText |safe }} -->
+        <h2>トップページ</h2>
+        <div class="detailImage">
+            <img src="static/images/work/top/work1.png" alt="">
+        </div>
+        <div class="comment">
+            <ul>
+                <li>・全国の現在の天気を見ることができます。</li>
+                <li>・一分ごとにページの更新が行われ、最新の天気に変わります。</li>
+            </ul>
+        </div>
     </section>
     <section class="return">
         <button><a href="/#work">前のページに戻る</a></button>
