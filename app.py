@@ -1,20 +1,20 @@
 from flask import Flask, url_for, render_template, jsonify, request
-import requests
+# import requests
 
 app = Flask("__name__")
 
 
-def discord_notify(url, message):
-    """
-    Discord send message.
+# def discord_notify(url, message):
+#     """
+#     Discord send message.
 
-    Args:
-        url (str): discord webhook url.
-        message (str): message.
-    """
-    if url:
-        requests.post(url,
-                    data={'content': message})
+#     Args:
+#         url (str): discord webhook url.
+#         message (str): message.
+#     """
+#     if url:
+#         requests.post(url,
+#                     data={'content': message})
 
 
 def workData():
@@ -296,7 +296,7 @@ def workData():
 @app.route("/")
 def home():
     page = "home"
-    discord_notify("https://discord.com/api/webhooks/1289073253171859540/DUonHHnEJezOg0VxMIA9TeqsYJobm9IPkFs8c8IMO4MhoviYV_M7Una0tYu3BWBgVzCC", 'ポートフォリオサイトにアクセスがあったよ！')
+    # discord_notify("https://discord.com/api/webhooks/1289073253171859540/DUonHHnEJezOg0VxMIA9TeqsYJobm9IPkFs8c8IMO4MhoviYV_M7Una0tYu3BWBgVzCC", 'ポートフォリオサイトにアクセスがあったよ！')
     return render_template("index.html", workData=workData(), page=page)
 
 
