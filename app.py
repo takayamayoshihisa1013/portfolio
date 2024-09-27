@@ -1,24 +1,37 @@
 from flask import Flask, url_for, render_template, jsonify, request
+import requests
 
 app = Flask("__name__")
 
+
+def discord_notify(url, message):
+    """
+    Discord send message.
+
+    Args:
+        url (str): discord webhook url.
+        message (str): message.
+    """
+    if url:
+        requests.post(url,
+                    data={'content': message})
+
+
 def workData():
-    
     workData = [{
-        "type":"サイト",
-        "url":"work?id=0",
-        "name":"一目でわかる全国天気",
-        "skill":"HTML/CSS/JavaScript/OpenWeatherMap",
-        "topImage":"work1.png",
-        "workTime":"2日",
-        "detail":"""
+        "type": "サイト",
+        "url": "work?id=0",
+        "name": "一目でわかる全国天気",
+        "skill": "HTML/CSS/JavaScript/OpenWeatherMap",
+        "topImage": "work1.png",
+        "workTime": "2日",
+        "detail": """
                     <p>初めて自分で作った作品です。</p>
                     <p>制作した理由は、学校の授業で習ったHTML、CSS、JavaScriptを復習するために何か作れるものはないかと考えたときに全国の天気マップを思いついたからです。</p>
                     <p>1分ごとに自動更新される仕組みにしてリアルタイムで全国に天気を表示します。</p>
                 """,
-        "images":[],
-        "detailText":"""
-        <h2>トップページ</h2>
+        "images": [],
+        "detailText": """
         <div class="detailImage">
             <img src="static/images/work/top/work1.png" alt="">
         </div>
@@ -29,14 +42,14 @@ def workData():
             </ul>
         </div>
         """
-            }, {
-        "type":"サイト",
-        "url":"work?id=1",
-        "name":"洋服のECサイト「SHEEP」",
-        "skill":"HTML/CSS/JavaScript/JQuery/Python/Flask/MySQL/GmailAPI",
-        "topImage":"work2.png",
-        "workTime":"3カ月",
-        "detail":"""
+    }, {
+        "type": "サイト",
+        "url": "work?id=1",
+        "name": "洋服のECサイト「SHEEP」",
+        "skill": "HTML/CSS/JavaScript/JQuery/Python/Flask/MySQL/GmailAPI",
+        "topImage": "work2.png",
+        "workTime": "3カ月",
+        "detail": """
                     <p>学校の進級制作展というイベントに出展したグループ作品です。</p>
                     <p>リーダーに人生で初めて選ばれ、ドラフト形式で取ったメンバーでグループ制作をしました。</p>
                     <p>グループ作品なのですが、メンバーに「Flaskを書くことができない」や「データベースを書きたくない」と言われたり、期限を守らない人が出てきたりしたので、穴埋めをしていたらいつの間にかフロントエンドのほとんど、バックエンドすべてを僕が担当していました。</p>
@@ -44,10 +57,10 @@ def workData():
                     <p>また、出展の際は既に存在しているECサイトなどから画像をダウンロードして表示していましたが、そのままポートフォリオサイトにサイトの画像を載せると著作権違反になるのでフリー画像に差し替えています。</p>
                     <p>画像提供:<a href='https://loosedrawing.com'>Loose Drawing様</a></p>
                 """,
-        "images":[
-            "work10","work11","work12","work14","work15","work16"
+        "images": [
+            "work10", "work11", "work12", "work14", "work15", "work16"
         ],
-        "detailText":"""
+        "detailText": """
                 <h2>Topページ</h2>
                 <div class="detailImage">
                     <img src="static/images/work/top/work2.png" alt="">
@@ -120,23 +133,23 @@ def workData():
                 </div>
                 
                 """
-            },{
-            "type":"アプリ",
-            "url":"work?id=2",
-            "name":"ローマ字を打たなくても検索できる50音キーボード",
-            "skill":"Python/Tkinter/SQLite/pyaudio/SpeechRecognition",
-            "topImage":"work3.png",
-            "workTime":"1カ月",
-            "detail":"""
+    }, {
+        "type": "アプリ",
+        "url": "work?id=2",
+        "name": "ローマ字を打たなくても検索できる50音キーボード",
+        "skill": "Python/Tkinter/SQLite/pyaudio/SpeechRecognition",
+        "topImage": "work3.png",
+        "workTime": "1カ月",
+        "detail": """
                         <p>U-22プログラミングコンテスト2024に出した作品です。</p>
                         <p>ローマ字がわからなくても押して文字が打てるようにというコンセプトで作りました。</p>
                         <p>更に文字の場所を変更できる機能や音声入力の機能を作りました。</p>
                         <p初めてのTkinterを使ったアプリ開発だったのでとても苦戦しました。</p>
                     """,
-            "images":[
-                "work10","work11","work12","work14","work15","work16"
-            ],
-            "detailText":"""
+        "images": [
+                "work10", "work11", "work12", "work14", "work15", "work16"
+        ],
+        "detailText": """
                     <h2>キーボード画面</h2>
                     <div class="detailImage">
                         <img src="static/images/work/top/work3.png" alt="">
@@ -185,22 +198,22 @@ def workData():
                     </div>
                     
                     """
-            },{
-            "type":"サイト",
-            "url":"work?id=3",
-            "name":"クッションのECサイト「softNest」",
-            "skill":"Python/Django/MySQL",
-            "topImage":"work4.png",
-            "workTime":"2週間",
-            "detail":"""
+    }, {
+        "type": "サイト",
+        "url": "work?id=3",
+        "name": "クッションのECサイト「softNest」",
+        "skill": "Python/Django/MySQL",
+        "topImage": "work4.png",
+        "workTime": "2週間",
+        "detail": """
                         <p>Djangoを学んだのでアウトプットをしてみようと思って作ったサイトです。</p>
                         <p>Djangoのフォルダやファイル、コードなどは調べながら書いたりすることができたのですが、データベースの操作のコードがSQL文ではなく独特なものでとても難しかったです。
                         <p>サイトは今回見やすさを重視しようと思ったのでシンプルなデザインで作ってみました。</p>
                     """,
-            "images":[
-                "work10","work11","work12","work14","work15","work16"
-            ],
-            "detailText":"""
+        "images": [
+                "work10", "work11", "work12", "work14", "work15", "work16"
+        ],
+        "detailText": """
                     <h2>トップページ</h2>
                     <div class="detailImage">
                         <img src="static/images/work/top/work4.png" alt="">
@@ -261,35 +274,39 @@ def workData():
                         </ul>
                     </div>
                     """
-            },{
-            "type":"サイト",
-            "url":"work?id=4",
-            "name":"今日見た夢を投稿しあうSNSサイト「dreamDiary」",
-            "skill":"HTML/CSS/JavaScript/React/Python/Flask/MySQL",
-            "topImage":"work5.png",
-            "workTime":"？",
-            "detail":"""
+    }, {
+        "type": "サイト",
+        "url": "work?id=4",
+        "name": "今日見た夢を投稿しあうSNSサイト「dreamDiary」",
+        "skill": "HTML/CSS/JavaScript/React/Python/Flask/MySQL",
+        "topImage": "work5.png",
+        "workTime": "？",
+        "detail": """
                         <p>Reactに興味があり、Reactを使ってサイトを作ってみたくなり、このSNSサイトを作り始めました。</p>
                         
                     """,
-            "detailText":"""
+        "detailText": """
                     <p class="comment">制作中...</p>
                     """
-            },
-            ]
+    },
+    ]
     return workData
+
 
 @app.route("/")
 def home():
     page = "home"
-    return render_template("index.html", workData = workData(), page = page)
+    discord_notify("https://discord.com/api/webhooks/1289073253171859540/DUonHHnEJezOg0VxMIA9TeqsYJobm9IPkFs8c8IMO4MhoviYV_M7Una0tYu3BWBgVzCC", 'ポートフォリオサイトにアクセスがあったよ！')
+    return render_template("index.html", workData=workData(), page=page)
+
 
 @app.route("/work")
 def work():
     page = "work"
     workNum = int(request.args.get("id"))
     print(workNum)
-    return render_template("work.html", workData = workData()[workNum], page = page)
+    return render_template("work.html", workData=workData()[workNum], page=page)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
