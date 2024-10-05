@@ -95,6 +95,10 @@ main .profile .profile_zone .profile_text .school {
     margin-top: 2vh;
 }
 
+main .profile .profile_zone .profile_text .school {
+    margin-bottom: 1vh;
+}
+
 main .profile .profile_zone .profile_text p {
     color: #555; /* 少し明るいグレー */
 }
